@@ -15,3 +15,16 @@ int main(){
 	
 	return 0;
 }
+
+void mySwap(int &i,int &j){
+    int diff;
+    diff = i-j;
+    if(diff<0){
+        i+=((diff)*(-1));
+        j+=(diff);
+    }
+    if(diff>0){
+        i+=(diff);
+        j+=((diff)*(-1));
+    }
+}
